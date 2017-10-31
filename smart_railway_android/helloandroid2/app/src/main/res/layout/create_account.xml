@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:textColor="#FFFFFF"
+            android:id="@+id/contactid"
+            android:layout_below="@+id/emailid"
+            android:layout_alignStart="@+id/passid" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:textColor="#FFFFFF"
+            android:id="@+id/passid"
+            android:layout_below="@+id/contactid"
+            android:layout_toEndOf="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD:"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView2"
+            android:layout_alignBottom="@+id/passid"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME:"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView3"
+            android:layout_above="@+id/emailid"
+            android:layout_alignStart="@+id/textView4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL:"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView4"
+            android:layout_above="@+id/contactid"
+            android:layout_alignStart="@+id/textView5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHONE NO:"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView5"
+            android:layout_above="@+id/passid"
+            android:layout_toStartOf="@+id/contactid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="should be of minimum 8 characters\nmust have ATLEAST\n1 capital alphabet\n1 Digit\n1 Special character"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/passid"
+            android:layout_toEndOf="@+id/textView2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/conpassid"
+            android:layout_below="@+id/textView6"
+            android:layout_alignStart="@+id/textView6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="confirm password:"
+            android:id="@+id/textView7"
+            android:layout_alignBottom="@+id/conpassid"
+            android:layout_toStartOf="@+id/conpassid"
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addid"
+            android:layout_below="@+id/textView7"
+            android:layout_alignEnd="@+id/conpassid"
+            android:layout_toEndOf="@+id/textView7"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADDRESS:"
+            android:textColor="#FFFFFF"
+            android:id="@+id/textView8"
+            android:layout_alignBottom="@+id/addid"
+            android:layout_alignStart="@+id/textView5" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE"
+            android:id="@+id/saveid"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:background="#BB0FB3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/requireid"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/addid"
+            android:layout_alignStart="@+id/addid"
+            android:layout_toStartOf="@+id/addid"
+            android:layout_above="@+id/saveid"
+            android:layout_alignEnd="@+id/textView6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:textColor="#FFFFFF"
+            android:id="@+id/emailid"
+            android:layout_below="@+id/nameid"
+            android:layout_alignStart="@+id/nameid" />
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:id="@+id/toolbar5"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textColor="#FFFFFF"
+            android:id="@+id/nameid"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/toolbar5"
+            android:layout_alignStart="@+id/contactid" />
+
+    </RelativeLayout>
+</LinearLayout>

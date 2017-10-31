@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/policetxt"
+        android:textColor="#FFFFFF"
+        android:text="(click to get police attention at your location)"
+        android:layout_below="@+id/policeid"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar6"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:text="medic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="#CC0000"
+        android:onClick="medic"
+        android:src="@drawable/medic"
+        android:layout_marginTop="101dp"
+        android:id="@+id/medicid"
+        android:layout_below="@+id/toolbar6"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/medictxt"
+        android:text="(click medic to get medical attention at your location)"
+        android:layout_below="@+id/medicid"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:text="police"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="#CC0000"
+        android:onClick="police"
+        android:src="@drawable/policeman"
+        android:layout_marginTop="65dp"
+        android:id="@+id/policeid"
+        android:layout_below="@+id/medictxt"
+        android:layout_alignStart="@+id/medicid" />
+</RelativeLayout>

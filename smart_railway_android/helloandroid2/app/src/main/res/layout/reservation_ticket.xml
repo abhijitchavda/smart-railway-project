@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView16"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:text="date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView18"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/trainnoid"
+        android:layout_toEndOf="@+id/textView16" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:textColor="#FFFFFF"
+        android:hint="yyyy/mm/dd"
+        android:id="@+id/ticketdateid"
+        android:layout_below="@+id/trainnoid"
+        android:layout_alignStart="@+id/trainnoid" />
+
+    <TextView
+        android:text="source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ticketdateid"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_marginTop="36dp"
+        android:id="@+id/textView19"
+        android:textColor="#FFFFFF"/>
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="enter source station"
+        android:id="@+id/sourceticket"
+        android:textColor="#FFFFFF"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sourceticket"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_marginTop="41dp"
+        android:id="@+id/textView20"
+        android:textColor="#FFFFFF"/>
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="enter destination station"
+        android:layout_below="@+id/sourceticket"
+        android:layout_alignStart="@+id/sourceticket"
+        android:layout_marginTop="28dp"
+        android:id="@+id/destinationticket"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:text="compartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/destinationticket"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textView21"
+        android:textColor="#FFFFFF"/>
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="compartment type"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/destinationticket"
+        android:layout_alignStart="@+id/destinationticket"
+        android:layout_marginTop="13dp"
+        android:id="@+id/compartmentid" />
+
+    <Button
+        android:text="save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveresticketid"
+        android:onClick="storeresticket"
+        android:layout_marginBottom="29dp"
+        android:background="#BB0FB3"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/sourceticket"
+        android:layout_marginEnd="30dp" />
+
+    <TextView
+        android:text="train no."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView17"
+        android:textColor="#FFFFFF"
+        android:layout_alignTop="@+id/trainnoid"
+        android:layout_alignStart="@+id/textView16" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textColor="#FFFFFF"
+        android:id="@+id/trainnoid"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignStart="@+id/sourceticket" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/toolbar10" />
+
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/frame1"
+        android:background="#631D76"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#631D76"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Platform No. : "
+                android:textColor="#FFFFFF"
+                android:id="@+id/plt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:textSize="50dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/platform_no"
+                android:layout_weight="1"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            >
+
+            <TextView
+                android:background="#631D76"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/train_name"
+                android:text="train name:"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"/>
+            <TextView
+                android:background="#631D76"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/train_no"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:text="train no:"/>
+
+            <TextView
+                android:background="#631D76"
+                android:text="status:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#631D76"
+                android:text="lateby:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lateby"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"/>
+            <TextView
+                android:background="#631D76"
+                android:text="sch_arrival:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sch_arrival"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1" />
+
+            <TextView
+                android:background="#631D76"
+                android:text="est_arrival:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/est_arrival"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frame1"
+        android:layout_marginTop="05dp"
+        android:background="@drawable/background">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/frame1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                android:background="#9E4770"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/notification1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#B1A5F9"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/notification1"
+                android:id="@+id/notification2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E1E1E1"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/notification2"
+                    android:id="@+id/notification3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#FBFBFB"
+                    android:layout_below="@+id/notification3"
+                    android:id="@+id/notification4"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#FFFFFF"
+                    android:background="#2E2532"
+                    android:layout_below="@+id/notification4"
+                    android:id="@+id/notification5"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="196dp"
+                    android:id="@+id/imageView4" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </ScrollView>
+</RelativeLayout>

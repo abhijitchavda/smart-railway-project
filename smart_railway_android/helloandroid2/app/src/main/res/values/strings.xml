@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">Rail Beat</string>
+    <string name="create_acc">Create Account</string>
+    <string name="login">Log in</string>
+    <string name="res">Reservation</string>
+    <string name="gen">General</string>
+    <string name="ticket_details">Ticket Details</string>
+    <string name="emergency">Emergency Service</string>
+    <string name="profile">Profile</string>
+    <string name="share_loc">Share Location</string>
+    <string name="notification">Notifications</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="change_pass">Change Password</string>
+    <string name="search_train">Search Train</string>
+    <string name="show_ticket">Your Ticket</string>
+    <string name="train_list">List of Trains</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="action_notifications">notifications</string>
+    <string name="action_log_out">Log Out</string>
+    <string name="action_general_ticket">General Ticket</string>
+    <string name="action_ticket_details_manual">Ticket Details</string>
+    <string name="action_gen_search_train">Search Available Train</string>
+    <string name="action_select_train">select train</string>
+    <string name="action_select_destination">select destination</string>
+    <string name="action_gen_ticket_show">Your Ticket</string>
+    <string name="action_share_location">Share Location</string>
+    <string name="action_cancelled_rescheduled">Cancelled/Rescheduled</string>
+    <string name="action_cancelled_train">Cancelled Trains</string>
+    <string name="action_reschedule_train">Reschedule Trains</string>
+    <string-array name="station_names">
+        <item>AGRA FORT-AF</item>
+        <item>AGRA CANTT.-AGC</item>
+        <item>AHMEDABAD-ADI</item>
+        <item>AJMER-AII</item>
+        <item>ALLAHABAD-ALD</item>
+        <item>AMRITSAR-ASR</item>
+        <item>BANdra (T)-Bdts</item>
+        <item>BANGALORE CITY-SBC</item>
+        <item>BANGALORE CANTT.-BNC</item>
+        <item>BARAUNI Jn.-BJU</item>
+        <item>BHAGALPUR-BGP</item>
+        <item>BHAVNAGAR (t)-BVC</item>
+        <item>BHOPAL-BPL</item>
+        <item>BHUBANESWAR-BBS</item>
+        <item>BHUJ-BHUJ</item>
+        <item>BHUSAVAL-BSL</item>
+        <item>BIKANER-BKN</item>
+        <item>BILASPUR jn.-BSP</item>
+        <item>BOKARO STEEL CITY-BKSC</item>
+        <item>CHANDIGARH-CDG</item>
+        <item>COIMBATORE Jn.-CBE</item>
+        <item>DADAR-DR</item>
+        <item>DARBHANGA-DBG</item>
+        <item>DEHRADUN-DDN</item>
+        <item>DELHI-DLI</item>
+        <item>DELHI SARAI ROHILLA-DEE</item>
+        <item>DHAMANGAON-DMN</item>
+        <item>DIBRUGARH -DBRG</item>
+        <item>ERNAKULAM Jn.-ER</item>
+        <item>FiROZABAD-FZD </item>
+        <item>FIROZPUR CITY-FZP </item>
+        <item>FiROZPUR CANTT.-FZR</item>
+        <item>GANDHIDHAM-GIM</item>
+        <item>GORAKHPUR-GKP</item>
+        <item>GURUVAYUR-GUV</item>
+        <item>GUWAHATI-GHY</item>
+        <item>HAPA-HAPA</item>
+        <item>HATIA-HT</item>
+        <item>HUBLI-UBL</item>
+        <item>HYDERABAD-HYB</item>
+        <item>INDORE-INDB</item>
+        <item>ITARSI-ET</item>
+        <item>JABALJAIPUR-JP</item>
+        <item>JAYPUR-JYP</item>
+        <item>JAISALMER-JSM</item>
+        <item>JAMMU TAWI-JAT</item>
+        <item>JAMNAGAR-JAM</item>
+        <item>JHANSI-JHS</item>
+        <item>jiND-jiND</item>
+        <item>JODHPUR-JU</item>
+        <item>KACHEGUDA-KCG</item>
+        <item>KAKINADA PORT-COA</item>
+        <item>KAMAKHYA-KYQ</item>
+        <item>KANPUR CENTRAL-CN</item>
+        <item>KATHGODAM-KGM</item>
+        <item>KATIHAR-KIR</item>
+        <item>KISHANGANJ -KNE</item>
+        <item>KOCHUVELI-KCVL</item>
+        <item>KOLKATA-KOAA</item>
+        <item>LOKMANYA TILAK (T)-lTT</item>
+        <item>LUCKNOW-LJN/LKO</item>
+        <item>MADGAON (GOA)-MAO</item>
+        <item>MADURAI Jn. -MDU</item>
+        <item>MALDA TOWN -MLDT</item>
+        <item>MANDUADIH-MUV</item>
+        <item>MANGALORE CENTRAL-MAQ</item>
+        <item>MANGALORE JN.-MAJN</item>
+        <item>MANMAD-MMR</item>
+        <item>MATHURA -MTJ</item>
+        <item>MAYILADUTURAI Jn.-MV</item>
+        <item>METTUPALAYAM-MTP</item>
+        <item>MUGHALSARAI-MGS</item>
+        <item>MUMBAI CENTRAL -BCT</item>
+        <item>MUMBAI CST -CSTM</item>
+        <item>MUZAFFARPUR -MFP</item>
+        <item>MYSORE-MYS</item>
+        <item>NAGERCOIL Jn. -NCJ</item>
+        <item>NAGPUR -NGP</item>
+        <item>NEW DELHI-NDLS</item>
+        <item>NEW JALPAIGURI-NJP</item>
+        <item>NIZAMABAD-NZB</item>
+        <item>NIZAMUDDIN-NZM</item>
+        <item>ODLABARI-ODB</item>
+        <item>OKHA-OKHA</item>
+        <item>PATIAlA-PTA</item>
+        <item>PATNA-PNBE</item>
+        <item>PORBANDAR-PBR</item>
+        <item>PUNE Jn.-PUNE</item>
+        <item>PURI-PURI</item>
+        <item>RAIPUR-R</item>
+        <item>RAJENDRANAGAR -RJQ</item>
+        <item>RAJKOT-RJT</item>
+        <item>RAMESWARAM-RMM</item>
+        <item>RAXAUL-RXL</item>
+        <item>SAMASTIPUR -SPJ</item>
+        <item>SEALDAH -SDAH</item>
+        <item>SECUNDERABAD-SC</item>
+        <item>SHIMLA-SML</item>
+        <item>SRI CHHATRAPATI   SHAHU MAHARAJ (T)-CSMT</item>
+        <item>SRI DUNGARGARH-SDGH</item>
+        <item>SRIGANGA NAGAR-SGNR</item>
+        <item>TATANAGAR-TATA</item>
+        <item>THANJAVUR -TJ</item>
+        <item>TIRUCHCHIRAPPALLI Jn.-TPJ</item>
+        <item>TIRUPATI-TPTY</item>
+        <item>THIRUVANANTHAPURAM-TVC</item>
+        <item>TUTICORIN-TN</item>
+        <item>UDAIPUR CITY-UDZ</item>
+        <item>VADODARA-BRC</item>
+        <item>VARANASI-BSB</item>
+        <item>VASCO-DA-GAMA-VSG</item>
+        <item>VERAVAL-VRL</item>
+        <item>VISAKHAPATNAM-VSKP</item>
+        <item>YESVANTPUR-YPR</item>
+    </string-array>
+    <string-array name="comp_names">
+        <item>L</item>
+        <item>D2</item>
+        <item>D3</item>
+        <item>D4</item>
+        <item>D5</item>
+        <item>D6</item>
+        <item>D7</item>
+        <item>D8</item>
+        <item>D9</item>
+        <item>D10</item>
+        <item>D11</item>
+        <item>EOG</item>
+        <item>GEN</item>
+        <item>C1</item>
+        <item>C2</item>
+        <item>C3</item>
+        <item>C4</item>
+        <item>PC</item>
+        <item>D1</item>
+    </string-array>
+</resources>

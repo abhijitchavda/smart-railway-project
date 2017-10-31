@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:orientation="horizontal">
+
+
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/train_icon"
+                android:id="@+id/imageView10"
+                android:scaleType="center"
+                android:adjustViewBounds="true"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Train Name"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelname"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"/>
+
+
+            <TextView
+                android:text="Train Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelnumber"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/train_icon"
+                android:id="@+id/imageView"
+                android:scaleType="center"
+                android:adjustViewBounds="true"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Train Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:text="Train Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/number"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"/>
+
+
+            <TextView
+                android:text="scheduled departure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/src_departure_time"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"/>
+
+
+            <TextView
+                android:text="scheduled arrival"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dest_arrival_time"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"/>
+
+
+
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>

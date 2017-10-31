@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/toolbar17" />
+
+    <TextView
+        android:text="NAME : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="68dp"
+        android:id="@+id/textView33"
+        android:layout_below="@+id/toolbar17"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:text="CONTACT DETAILS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00FF00"
+        android:layout_below="@+id/toolbar17"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textView35" />
+
+    <TextView
+        android:text="NUMBER : "
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView33"
+        android:layout_alignEnd="@+id/textView33"
+        android:layout_marginTop="32dp"
+        android:id="@+id/textView37" />
+
+    <TextView
+        android:text="CLICK ON 'SHARE LOCATION' TO SHARE YOUR LOCATION WITH THIS CONTACT DURING YOUR JOURNEY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView38"
+        android:layout_below="@+id/textView37"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="21dp"
+        android:layout_alignStart="@+id/textView33" />
+
+    <TextView
+        android:text="textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView33"
+        android:layout_toEndOf="@+id/textView33"
+        android:layout_marginStart="44dp"
+        android:id="@+id/contactnameid" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView38"
+        android:layout_toEndOf="@+id/contactnameid"
+        android:id="@+id/contactnumberid"
+        android:layout_alignStart="@+id/contactnameid" />
+
+    <Button
+        android:text=" SHARE LOCATION "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BB0FB3"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textView38"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:id="@+id/sharelocationbtn" />
+
+</RelativeLayout>

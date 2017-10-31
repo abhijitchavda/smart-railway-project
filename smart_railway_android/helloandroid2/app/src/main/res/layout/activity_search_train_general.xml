@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/toolbar25" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="enter source station"
+        android:id="@+id/gensourcestation"
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/show_train" />
+
+    <TextView
+        android:text="SOURCE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView32"
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/show_train" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_above="@+id/gensourcestation"
+        android:layout_alignEnd="@+id/textView32"
+        android:layout_marginBottom="34dp">
+
+        <RadioButton
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="29dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/radioButton2hr"
+            android:text="2hrs"
+            android:layout_below="@+id/radioButton4hr"
+            />
+        <RadioButton
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="29dp"
+            android:textColor="#FFFFFF"
+            android:id="@+id/radioButton4hr"
+            android:text="4hrs"
+            android:layout_below="@+id/radioButton4hr"/>
+
+    </RadioGroup>
+
+    <Button
+        android:text="GET TRAINS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"
+        android:textColor="#FFFFFF"
+        android:background="#BB0FB3"
+        android:onClick="onClick"
+
+        android:id="@+id/show_train"
+        android:layout_below="@+id/gensourcestation"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="List of trains available between \n(choose anyone)"
+        android:id="@+id/textView30"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/toolbar25"
+        android:layout_alignStart="@+id/textView32" />
+
+
+</RelativeLayout>

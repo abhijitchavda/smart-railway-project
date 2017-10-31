@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_height="30dp"
+        android:layout_width="100dp"
+        android:text="PROFILE"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView1"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp" />
+
+    <TextView
+        android:text="EMEREGENCY SERVICE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView25"
+        android:layout_alignStart="@+id/imageButton16"
+        android:layout_marginStart="15dp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView26" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/emergency_icon"
+        android:id="@+id/imageButton16"
+        android:layout_marginTop="44dp"
+        android:onClick="emergency"
+        android:layout_below="@+id/careh"
+        android:layout_alignStart="@+id/findth" />
+
+    <TextView
+        android:text="SEARCH TRAIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView24"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/careh"
+        android:layout_alignEnd="@+id/findth" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="BEGIN JOURNEY"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView"
+        android:layout_alignEnd="@+id/beginjh"
+        android:layout_below="@+id/beginjh" />
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ticket_icon"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/beginjh"
+        android:onClick="beginjourney"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/profile_icon"
+        android:onClick="profile"
+        android:id="@+id/profileh"
+        android:layout_above="@+id/textView1"
+        android:layout_alignStart="@+id/textView24" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/history_icon"
+        android:id="@+id/careh"
+        android:onClick="cancelres"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignEnd="@+id/textView" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/schedule_icon"
+        android:id="@+id/findth"
+        android:onClick="searchtrain"
+        android:layout_marginEnd="25dp"
+        android:layout_above="@+id/imageButton16"
+        android:layout_alignEnd="@+id/textView1" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/location_icon"
+        android:id="@+id/imageButton15"
+        android:onClick="share"
+        android:layout_alignTop="@+id/imageButton16"
+        android:layout_alignStart="@+id/careh" />
+
+    <TextView
+        android:text="CANCELLED/RESCHEDULED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView23"
+        android:layout_below="@+id/careh"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="SHARE LOCATION"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView25"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/imageButton15"
+        android:layout_alignStart="@+id/imageButton15" />
+
+
+</RelativeLayout>

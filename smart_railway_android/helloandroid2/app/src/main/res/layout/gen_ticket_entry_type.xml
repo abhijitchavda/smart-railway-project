@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+    <Button
+        android:text="search train"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="114dp"
+        android:onClick="searchtrgen"
+        android:id="@+id/search_trainid"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#BB0FB3"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:text="manual entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/manualtypegen"
+        android:onClick="manualtype"
+        android:layout_below="@id/search_trainid"
+        android:layout_centerHorizontal="true"
+        android:background="#916AF9"
+        android:layout_gravity="center"/>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/toolbar14" />
+
+
+</RelativeLayout>
