@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abhijit.helloandroid">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".createAccount"
+            android:label="@string/create_acc" />
+        <activity
+            android:name=".forgotPassword"
+            android:label="@string/forgot_pass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".changePassword"
+            android:label="@string/change_pass" />
+        <activity
+            android:name=".Homepage"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".SearchTrain"
+            android:label="@string/search_train" />
+        <activity
+            android:name=".ResTicketEntryType"
+            android:label="@string/res" />
+        <activity
+            android:name=".emergency"
+            android:label="@string/emergency" />
+        <activity
+            android:name=".ShowTicket"
+            android:label="@string/show_ticket" />
+        <activity
+            android:name=".PnrNoTicket"
+            android:label="@string/action_ticket_details_manual" />
+        <activity android:name=".ShareLocationContact"
+            android:label="@string/action_share_location"/>
+        <activity android:name=".ShareLatLong"
+            android:label="@string/action_share_location"></activity>
+        <activity
+            android:name=".Notification"
+            android:label="@string/notification" />
+        <activity
+            android:name=".BeginJourney"
+            android:label="@string/ticket_details" />
+        <activity android:name=".Listview_Canceltrain"
+            android:label="@string/action_cancelled_train"></activity>
+        <activity android:name=".CancelRes"
+            android:label="@string/action_cancelled_rescheduled"></activity>
+        <activity android:name=".CancelledTrain"
+            android:label="@string/action_cancelled_train"></activity>
+        <activity android:name=".Search_train_gen"
+            android:label="@string/action_gen_search_train"></activity>
+        <activity android:name=".RescheduleTrain"
+            android:label="@string/action_reschedule_train"></activity>
+        <activity android:name=".Listview_Rescheduletrain"
+            android:label="@string/action_reschedule_train"></activity>
+        <activity android:name=".Listview_gen_trains"
+            android:label="@string/action_select_train"></activity>
+        <activity android:name=".Gen_Train_Route"></activity>
+        <activity android:name=".Listview_gen_train_route"
+            android:label="@string/action_select_destination"></activity>
+        <activity android:name=".Gen_ticket_show"
+            android:label="@string/action_gen_ticket_show"></activity>
+        <activity
+            android:name=".ReservationTicket"
+            android:label="@string/action_ticket_details_manual" />
+        <activity
+            android:name=".Listview_findtrain"
+            android:label="@string/train_list" />
+        <activity
+            android:name=".Aboutus"
+            android:label="@string/about_us" />
+        <activity
+            android:name=".Contactus"
+            android:label="@string/contact_us"></activity>
+        <activity android:name=".GenTicketEntryType"
+            android:label="@string/action_general_ticket"></activity>
+        <activity android:name=".LogOut" />
+        <activity android:name=".Profile"
+            android:label="@string/profile"></activity>
+    </application>
+
+</manifest>
