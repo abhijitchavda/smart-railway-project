@@ -21,16 +21,16 @@ public class MyApplication extends Application {
     public static void enableBeaconNotifications(Context context) {
         if (beaconNotificationsEnabled) { return; }
         BeaconNotificationsManager beaconNotificationsManager = new BeaconNotificationsManager(context);
-        beaconNotificationsManager.addNotification(new BeaconID("7B42A126-9898-4811-A2BA-B912387AD564",4354,9195),
+        beaconNotificationsManager.addNotification(new BeaconID("*************",4354,9195),
                 "id:1:enter",
                 "Goodbye, world.");
-        beaconNotificationsManager.addNotification(new BeaconID("7B42A126-9898-4811-A2BA-B912387AD564",38813,34937),
+        beaconNotificationsManager.addNotification(new BeaconID("*************",38813,34937),
                 "id:1:enter",
                 "Goodbye, world.");
-        beaconNotificationsManager.addNotification(new BeaconID("7B42A126-9898-4811-A2BA-B912387AD564",62314,63730),
+        beaconNotificationsManager.addNotification(new BeaconID("*************",62314,63730),
                 "id:1:enter",
                 "Goodbye, world.");
-        beaconNotificationsManager.addNotification(new BeaconID("7B42A126-9898-4811-A2BA-B912387AD564",44979,35401),
+        beaconNotificationsManager.addNotification(new BeaconID("*************",44979,35401),
                 "id:1:enter",
                 "Goodbye, world.");
         beaconNotificationsManager.startMonitoring();
